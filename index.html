@@ -4,90 +4,93 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Let's Visit Scotland</title>
   <style>
-    body { font-family: Georgia, serif; margin: 0; background: #fdfdfd; color: #222; }
-    header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Eilean_Donan_Castle%2C_Scotland_-_Oct_2014.jpg') no-repeat center center/cover;
-      padding: 100px 20px; text-align: center; color: white;
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #222;
     }
-    header h1 { font-size: 2.5em; margin: 0; text-shadow: 1px 1px 2px #000; }
-    header p { font-size: 1.2em; max-width: 600px; margin: auto; text-shadow: 1px 1px 2px #000; }
-    section { padding: 50px 20px; max-width: 900px; margin: auto; }
-    h2 { font-size: 1.8em; margin-bottom: 20px; text-align: center; }
-    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 200px; text-align: center; }
-    .card img { width: 100%; border-radius: 6px; height: 130px; object-fit: cover; }
-    .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
-    .testimonial { background: #f1f1f1; padding: 20px; border-radius: 6px; font-style: italic; }
-    form { margin-top: 30px; display: flex; flex-direction: column; gap: 15px; }
-    input, textarea { padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em; }
-    button { padding: 12px; background: #1a3e5d; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; }
-    button:hover { background: #295477; }
+    header {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/Eilean_Donan_Castle_%28April_2022%29_02.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1em;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 0.5em;
+    }
+    .card p {
+      padding: 0 0.5em 1em;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Let’s visit Scotland nu este o agenție. Este o invitație.</h1>
-    <p>Oferim retreat-uri culturale pentru grupuri restrânse de români, în cele mai spectaculoase zone din Scoția. Fiecare detaliu este atent ales – de la vile victoriene la cine regale – pentru a trăi nu o vacanță, ci o poveste.</p>
+    <h1>Let's visit Scotland nu este o agenție. Este o invitație.</h1>
   </header>
 
   <section>
-    <h2>Descoperă Scoția autentică</h2>
+    <p>Oferim retreat-uri culturale pentru grupuri restrânse de români, în cele mai spectaculoase zone din Scoția. Fiecare detaliu este atent ales – de la vile victoriene la cine regale – pentru a trăi nu o vacanță, ci o poveste.</p>
+    
     <div class="cards">
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Abbotsford_House%2C_Scotland.jpg" alt="Scottish Borders">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Melrose_Abbey_view_2.jpg" alt="Scottish Borders" />
         <h3>Scottish Borders</h3>
         <p>Castele și sate medievale, Toscana nordului</p>
       </div>
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Loch_Leven_and_the_Pap_of_Glenshiel.jpg" alt="Highlands">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Cairngorms_from_Carn_Liath_-_geograph.org.uk_-_1481056.jpg" alt="Highlands" />
         <h3>Highlands</h3>
         <p>În inima naturii sălbatice</p>
       </div>
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Edinburgh_Castle_from_the_south_east.JPG" alt="Edinburgh">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Edinburgh_City_View.jpg" alt="Edinburgh & Lothian" />
         <h3>Edinburgh & Lothian</h3>
-        <p>Istoire, mister și eleganță</p>
+        <p>Iubire, istorie și mister</p>
       </div>
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Isle_of_Harris_-_Luskentyre_Beach.jpg" alt="Hebride">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Luskentyre_beach_on_the_Isle_of_Harris_%2826465724714%29.jpg" alt="Hebride" />
         <h3>Hebride</h3>
         <p>Liniște, spiritualitate, peisaje rare</p>
       </div>
     </div>
   </section>
-
-  <section>
-    <h2>Cazare de poveste</h2>
-    <p style="text-align:center; max-width: 700px; margin: auto;">Vom locui în castele, conace victoriene sau vile de patrimoniu. Diminețile încep cu microbuzul la poartă, iar serile se încheie cu o cină regală în saloane autentice.</p>
-    <p style="text-align:center; font-style: italic; margin-top: 15px;">Locuri puține. Trăiri profunde.</p>
-  </section>
-
-  <section>
-    <h2>Ce spun participanții</h2>
-    <div class="testimonials">
-      <div class="testimonial">„O experiență cu adevărat autentică. Totul a fost organizat impecabil.” – <strong>Valentin Ionescu</strong></div>
-      <div class="testimonial">„M-am simțit ca într-o poveste, cu oameni calzi și peisaje de vis.” – <strong>Mihaela Stănculescu</strong></div>
-      <div class="testimonial">„Flavius nu ne-a arătat Scoția, ci ne-a făcut să o trăim.” – <strong>Florin Șerban</strong></div>
-      <div class="testimonial">„Totul a fost gândit cu finețe, de la cazare la atmosferă.” – <strong>Lavinia S.</strong></div>
-      <div class="testimonial">„M-am simțit acasă. Un proiect din suflet, pentru suflet.” – <strong>Ioana Maria P.</strong></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Vrei să faci parte din următorul retreat?</h2>
-    <p style="text-align:center; max-width: 700px; margin: auto;">Nu organizăm „sejururi”, ci experiențe personalizate. Completează formularul și te vom contacta pentru o scurtă conversație video.</p>
-    <form action="mailto:flavius.preoteasa@legaladviceromania.ro" method="post" enctype="text/plain">
-      <input type="text" name="Nume" placeholder="Numele tău" required>
-      <input type="email" name="Email" placeholder="Adresa de email" required>
-      <input type="tel" name="Telefon" placeholder="Telefon">
-      <textarea name="Mesaj" placeholder="Mesajul tău sau motivația participării"></textarea>
-      <button type="submit">Aplică pentru următorul retreat</button>
-    </form>
-  </section>
-
 </body>
 </html>
