@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -15,28 +18,39 @@
       background-image: url('https://cdn.pixabay.com/photo/2020/05/20/15/20/eilean-donan-castle-5198827_1280.jpg');
       background-size: cover;
       background-position: center;
-      height: 60vh;
+      height: 65vh;
       color: white;
       text-shadow: 1px 1px 6px #000;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 2em;
     }
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+      margin-bottom: 0.5em;
       background: rgba(0, 0, 0, 0.4);
+      padding: 0.5em 1em;
+      border-radius: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      max-width: 800px;
+      background: rgba(0, 0, 0, 0.3);
       padding: 1em;
+      border-radius: 8px;
     }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 2em;
+      padding: 3em 1em;
     }
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1em;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
     }
     .card {
       background: white;
@@ -46,48 +60,115 @@
     }
     .card img {
       width: 100%;
-      height: 150px;
+      height: 180px;
       object-fit: cover;
     }
     .card h3 {
-      margin: 0.5em;
+      margin: 0.7em;
+      font-size: 1.2em;
     }
     .card p {
-      padding: 0 0.5em 1em;
-      font-size: 0.9em;
+      padding: 0 0.7em 1em;
+      font-size: 0.95em;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+    .testimonial {
+      background: #ffffff;
+      border-left: 4px solid #1a3e5d;
+      padding: 1em;
+      border-radius: 6px;
+      font-style: italic;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    form {
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      padding: 12px;
+      background: #1a3e5d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #295477;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Let's visit Scotland nu este o agenție. Este o invitație.</h1>
+    <h1>Let’s visit Scotland nu este o agenție. Este o invitație.</h1>
+    <p>Oferim retreat-uri cu parfum aristocrat pentru grupuri restrânse de români, în cele mai spectaculoase zone din Scoția. Fiecare detaliu este atent ales – de la castele scoțiene și vile victoriene, la cine servite în saloane regale. Nu este o vacanță. Este o poveste.</p>
   </header>
 
   <section>
-    <p>Oferim retreat-uri culturale pentru grupuri restrânse de români, în cele mai spectaculoase zone din Scoția. Fiecare detaliu este atent ales – de la vile victoriene la cine regale – pentru a trăi nu o vacanță, ci o poveste.</p>
-    
+    <h2 style="text-align:center; margin-bottom: 2em;">Retreat-uri în locuri cu suflet</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2021/08/21/16/01/melrose-6561806_1280.jpg" alt="Scottish Borders" />
+        <img src="https://cdn.pixabay.com/photo/2017/04/03/15/18/melrose-2196960_1280.jpg" alt="Scottish Borders">
         <h3>Scottish Borders</h3>
         <p>Castele și sate medievale, Toscana nordului</p>
       </div>
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2017/05/01/17/00/scotland-2276191_1280.jpg" alt="Highlands" />
-        <h3>Highlands</h3>
-        <p>În inima naturii sălbatice</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2017/03/02/04/20/edinburgh-2118946_1280.jpg" alt="Edinburgh & Lothian" />
+        <img src="https://cdn.pixabay.com/photo/2017/03/02/04/20/edinburgh-2118946_1280.jpg" alt="Edinburgh & Lothian">
         <h3>Edinburgh & Lothian</h3>
-        <p>Iubire, istorie și mister</p>
+        <p>Iubire, istorie și mister scoțian</p>
       </div>
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2020/05/19/14/06/scotland-5196339_1280.jpg" alt="Hebride" />
-        <h3>Hebride</h3>
-        <p>Liniște, spiritualitate, peisaje rare</p>
+        <img src="https://cdn.pixabay.com/photo/2020/05/19/14/06/scotland-5196339_1280.jpg" alt="Insulele Hebride">
+        <h3>Insulele Hebride</h3>
+        <p>Liniște, spiritualitate și peisaje rare, la capătul lumii</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2021/08/28/15/35/loch-lomond-6582702_1280.jpg" alt="Glasgow, Coasta Atlanticului și Loch Lomond">
+        <h3>Glasgow – Coasta Atlanticului – Loch Lomond</h3>
+        <p>Oraș vibrant, apusuri marine și liniștea unui lac regal</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2020/06/27/13/44/quiraing-5347556_1280.jpg" alt="Highlands & Insula Skye">
+        <h3>Highlands & Insula Skye</h3>
+        <p>În inima sălbăticiei scoțiene – cu stânci, munți și legende vii</p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 1em;">Ce spun participanții</h2>
+    <div class="testimonials">
+      <div class="testimonial">„O experiență cu adevărat autentică. Totul a fost organizat impecabil.” – <strong>Valentin Ionescu</strong></div>
+      <div class="testimonial">„M-am simțit ca într-o poveste, cu oameni calzi și peisaje de vis.” – <strong>Mihaela Stănculescu</strong></div>
+      <div class="testimonial">„Flavius nu ne-a arătat Scoția, ci ne-a făcut să o trăim.” – <strong>Florin Șerban</strong></div>
+      <div class="testimonial">„Totul a fost gândit cu finețe, de la cazare la atmosferă.” – <strong>Lavinia S.</strong></div>
+      <div class="testimonial">„M-am simțit acasă. Un proiect din suflet, pentru suflet.” – <strong>Ioana Maria P.</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-top: 3em;">Aplică pentru următorul retreat</h2>
+    <form action="mailto:flavius.preoteasa@legaladviceromania.ro" method="post" enctype="text/plain">
+      <input type="text" name="Nume" placeholder="Numele tău" required>
+      <input type="email" name="Email" placeholder="Adresa de email" required>
+      <input type="tel" name="Telefon" placeholder="Telefon (opțional)">
+      <textarea name="Mesaj" placeholder="Spune-ne câteva cuvinte despre tine sau motivația participării"></textarea>
+      <button type="submit">Trimite aplicația</button>
+    </form>
+    <p style="text-align:center; margin-top: 2em; font-style: italic;">Pentru orice întrebare, ne poți scrie la: <strong>flavius.preoteasa@legaladviceromania.ro</strong></p>
   </section>
 </body>
 </html>
